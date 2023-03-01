@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat:ital,wght@0,300;0,400;0,700;0,800;1,400;1,500;1,700&family=Playfair+Display:wght@400;600;700&family=Poppins:ital,wght@0,300;0,400;0,700;1,400;1,500;1,600&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Expense Spiltter</title>
+</head>
+
+<body>
+
+  <div class="container-fluid app mx-auto ">
+    <div class="row ">
+      <header class=" heading">
+        <nav class="navbar fixed-top navigation  ">
+          <div class="container-fluid">
+            <h1>Expenser</h1>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="row  mx-auto" id="expense-section">
+      <expense class="expense">
+        <!-- <caption>Expense List</caption> -->
+        <div class="row">
+          <h1>Expense list</h1>
+          <div class="container-fluid expense mx-auto text-center">
+            <table class="table mx-auto" id="expense-table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </expense>
+      <hr>
+      <div class="row card " id="new-item-section">
+        <div class="card-header">
+          <h2>Add New Item</h2>
+        </div>
+        <form action="/expense" method="post">
+          <div class="row">
+            <div class="col">
+              <label for="title">Item</label>
+            </div>
+            <div class="col">
+              <label for="amount">Amount</label>
+            </div>
+            <div class="col"> <label for="persons">Person:</label></div>
+          </div>
+          <div class="row input-row">
+            <div class="col">
+              <input class="input-box-medium input-box" type="text" name="title">
+            </div>
+            <div class="col">
+              <input class="input-box-small input-box" type="number" name="amount">
+            </div>
+            <div class="col ">
+              <select class="form-select form-select-sm input-box-large input-box "   aria-label=".form-select-sm example" id="persons" name="id" ">
+                <option value=" 1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-dark" type="submit">Submit</button>
+      </div>
+      </form>
+    </div>
+    <div class="row " id="footer-section">
+      <footer>
+        <ul class="nav nav-pills nav-fill  bg-dark">
+          <li class="nav-item">
+            <a class="nav-link" href="/expense"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABZ0lEQVR4nO2ZQWrDMBBFX7r3EZpjaJ1F79RdMGTTQBb2DXyN4EAWdbvKIhfpGVoEEzDByLUVS+pUDwYs45H1kcbyaCCTyWQ0sQZq4Ai0kewoY1j7iPgC3oE98BbJ9kAnY3meI6QWESvisxIx1RznE7AjHXYypsmcgbLXLgAj10baIe7dKGVM3kJsx41cN9IOce/hQmJTLjEjIWiWmpH++g2BWSpGpgqxvt93NmWpmhDB/hus7xV4EbtOFNKkEuz3L350f0FnxEdIk0qw+woxKQV7kkKMlqU1xKvD2gEh7YiPi0VnxO4NF0dSdOg9e3A8d5G+ogW7ffkGfzYDQkzIYP+TQoyWpTWEK9fuBoK9G/FxkT+/Z60bYqFFiNG8s/+b3/hriolVoSXVLbQcPhgtx0GxKfORKUoOsU9aygq1/K2mUOh5Aj7mFnpupTfbwXYk117StsCnT+kNcawSKIZWPiIymUyG5PgBNVw7D6Opj8oAAAAASUVORK5CYII="></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/calculate"><img src="https://img.icons8.com/ios/50/null/apple-calculator.png"/></a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/clear"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEzklEQVR4nO2ZW4iWRRjHf9tpyZItSYwOZIm1YphtgalBph0s0yzSki4qCnXN1A52gLxQvDFo9yIIDamLztlCthZUlq4kG6TdSGWbVDetWXQhRQeUfeOB/2zTNK/zfp/7fvtt+YeHb2ae5515/t+cnpmBY/hv4gSgFdgILAcaj2DbKBuzXaJv6wKnAl1ABvyq313AiIjtCOl82y7VMagwB3YAfcADKrsLOAx8CDR4tpb+SDqzQd/0qY5BI+OTsGHl4zH925O8sikqezSwbR1MMqdoSPRpnIe4WU7P9MpuVNnsiP0S1dWlumsCa2i7Gr4/oj8X+Ab4AWjyyk8DDkhnNiGsrj7VXTqZYcA2Nbg0ojcH9wG/AdMj+unS7cshs1R1b1NbpWCYJrA1tCyiPwf4GvgDmHWEeq4Vme+A0RH9wjLnzMnA1gEgEZL5Fjgvol9UBhkj8YEmqq1GIc4EvgD+BG6qoN7rgN+BHuDsiH75QC4AKRKjqiRRlMwKb9OsmoyFEltU0eM5JD4XidiSOtBk3tcfWzWJJ0ok4XC9R+asiP7BasicBHQWJDGHgYNtnkbmqwSZ91Jk5gPPAt36oBfYEJEe6ffk6I9G9qjunhx9r/Td8nVeSOJqGQxFuSpc6qxwDEMHY+Sz+f6vlSG209YrRstn870fx4jUW48s9grnDRFZIZ/N935YSL2/DlagrELZr4D1H7Aos0UbXQdwWZ1Kh3xsSUXGdk7YHJQdB4wDxkbsTdcMXBhcNqD8RZI83TjVEWJsju5t+ZjETmB3EHft8LrzFc+pE3VOcboOT3c88I6n26IyR36zp9uqutD3r3m67QqbHHbLxyRe13nb4VZVuA54XulLgwuFNoUQlp7sHWst/4wkUwRhmKr8Bn2bqS40ZDK1tU7pW/gbB+RjEm060DQGK1qzAjv/duRu5ScC05SeK90dyl8hyVSGbDJ9M1Fpq4ugjeZgZWqUb08XIfJwsMsPFpFVXtuOyPnKP1SEiHNgao2JrNFQ+zmyzP4CvKT7L8vfXoTIlTKeX2MiJoeAd3XBMVsXGdb+mzqrODvzMYmw+8okYpP/OaXtqsmW2zzYpr1Jtm94K2AuwglVJhF3Et1Y8HmhAVitb9oL2POj1vKyibieqPSN5EXd6l+eMvwM+LgGRA4lhlMeRgIHgbdIoFO3gGUTsYmN/tlrCsoURQbrdbNpl+O5WK/ArKFkIsu8I2slMsN7uohdlvdjlYxGlUxkjrf8PlWgN9xmbd9forR7/YriHhm1lExklkdkJXBBQhZ4bVys9H2pa8xMm9IipW1S3qC03Qyif8MFke5Kyboc7b4uiJwc7MhuWCz24qlKZKYXsJpPuRgvo1bdG2V6yPxUy56LwyZJZ2H+J9p/7IyB90/vlJhugnTNylvYb7hN7yILC8idCuvb5YutYLlokhNrlbc46Cfge/WQjye17/RG3k5W6khg8kige1lhR+zlKoXhCuftZSsJC9ReoDxM0D+6KXJ6TKGtyIrlsBf4Uu8iZcleOWRhR1Hcq2Fp0XAhvFrFJDwasbBjZGI4uUNfdyXPC7Z7nl4DOcNz8KA247kaeuO1OrVrTmTqiYoffGoJ22s6FX+FvXVYE7vQnKgXNGmfsE3Z5oP1iPXa/wN/AQfXr5xgOOxuAAAAAElFTkSuQmCC"></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

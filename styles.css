@@ -1,0 +1,130 @@
+
+@media (max-width: 720px) { 
+    body{
+        margin: 0;
+        /* background-color: #474E68; */
+        /* background-color: #404258 */
+      background-color: #18122B;
+        /* background-color: #474E68; */
+        color: #FEFEFE; 
+    }
+    .app  {
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    /* header Section */
+      
+    h1{
+       
+        /* color: rgb(42,59,114); */
+        color: #6B728E;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    h2{
+        /* color: rgb(42,59,114); */
+        color: #171010;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+  
+    nav{
+        background-color:  #171010;
+        color: #FEFEFE;
+    }
+    hr{
+        /* background-color: #FEFEFE; */
+    }
+    .navigation{
+        height: 10%;
+    }
+    
+    nav a{
+        color: #FEFEFE;
+    }
+    .heading h1{
+        font-family: 'Playfair Display', serif;
+        font-weight:bolder;
+        font-size:2.25rem;
+        letter-spacing: 4px;
+        color: #0d6efd;
+    }
+    .table{
+        background-color: #635985;
+    }
+    .table th{
+        background-color: #3c3b3b;
+        color: #d9d9db;
+    }
+    .table tr{
+        color: #18122B;
+    }
+    .expense{
+        color: #FEFEFE;
+    }
+   .card{
+    background-color: #635985;
+   }
+   .card-header{
+    background-color:#3c3b3b; 
+    
+   }
+   .card-header h2{
+    color: #6B728E;
+   }
+   .dark-color {
+    color: #FEFEFE;
+        /* background-color: rgb(42,59,114); */
+      
+    }
+    .white-color{
+        background-color: #FEFEFE;
+     }
+     .input-box-medium{
+       
+        width: 100%;
+     }
+     .input-box-small{
+        width: 100%;
+     }
+     .input-box-large{
+        width: 90%;
+     }
+
+    /* Expense Section */
+    #expense-section{
+        margin: 30% 0 0 0;
+    }
+    #expense-section .btn{
+        margin: 8% 0 7% 0;
+    }
+    #expense-table{
+        margin: 5% 0 20% 0;
+    }
+    #new-item-section{
+        margin: 8% 0 8% 0;
+    }
+    #new-item-section label{
+        font-size: large;
+        font-weight: 400 bold;
+        /* letter-spacing: 0.125rem; */
+        color: #18122B;
+        margin: 5% 0 5% 0;
+        padding: 2% 0 4% 0;
+    }
+    #new-item-section .input-box{
+        background-color: #6B728E;
+        margin: 7% 0 7% 0;
+        padding: 6% 0 2% 0;
+    }
+   #footer-section{
+    display: block;
+    margin: 5% 0 5% 0;
+    width: 100%;
+   }
+   #footer-section img {
+    background-color: #0d6efd;
+    color: #FEFEFE;
+    border-radius: 25%;
+   }
+    }
